@@ -1,0 +1,240 @@
+:root{
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Very-light-gray: hsl(0, 0%, 95%);/*font*/
+--Transparent-white:hsl(0, 0%, 95%);
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    width:100%;
+    background:var(--Very-light-gray);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    
+    width:750px;
+    height:450px;
+    background:var(--Very-light-gray);
+    border-radius: 15px;
+}
+.rightCard{
+    width:250px;
+    height:100%;
+    background-color: var(--Very-dark-cyan);    
+    float:right;
+    border-radius: 0 15px 15px 0;
+}
+.rightCard img{
+    position: relative;
+    top:35px;
+    left:35px;   
+}
+
+.rightCard h1{
+    position: relative;
+    font-family: 'Lexend Deca';
+    color:var(--Transparent-white);
+    top:50px;
+    left:40px;
+    font-weight: 700;
+}
+.rightCard p{
+    position: relative;
+    color:var(--Very-light-gray);
+    font-size: 14px;
+    font-family:'Lexend Deca';
+    font-weight: 400;
+    top:75px;
+    padding-right:30px;
+    padding-left: 40px;
+    line-height: 25px;
+}
+.rightCard button{
+    position: relative;
+    height:30px;
+    width:130px;
+    top:125px;
+    border-radius: 25px;
+    border:none;
+    left:40px;
+    font-size:16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color:var(--Very-dark-cyan)
+}
+
+
+.midCard{
+    width:250px;
+    height:100%;
+    background-color: var(--Dark-cyan);    
+    float:right;
+}
+
+.midCard img{
+    position: relative;
+    top:35px;
+    left:35px;
+}
+.midCard h1{
+    position: relative;
+    font-family: 'Lexend Deca';
+    color:var(--Transparent-white);
+    top:50px;
+    left:40px;
+    font-weight: 700;
+}
+.midCard p{
+    position: relative;
+    color:var(--Very-light-gray);
+    font-size: 15px;
+    font-family:'Lexend Deca';
+    font-weight: 400;
+    top:75px;
+    padding-right:30px;
+    padding-left: 40px;
+    line-height: 25px;
+}
+
+.midCard button{
+    position: relative;
+    height:30px;
+    width:130px;
+    top:125px;
+    border-radius: 25px;
+    border:none;
+    left:40px;
+    font-size:16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color:var(--Dark-cyan)
+}
+.leftCard{
+    width:250px;
+    height:100%;
+    background-color: var(--Bright-orange);
+    
+    float:right;
+    border-radius: 15px 0 0 15px;
+}
+.leftCard img{
+    position: relative;
+    top:35px;
+    left:35px;
+    
+   
+}
+
+.leftCard h1{
+    position: relative;
+    font-family: 'Lexend Deca';
+    color:var(--Transparent-white);
+    top:50px;
+    left:40px;
+    font-weight: 700;
+}
+.leftCard p{
+    position: relative;
+    color:var(--Very-light-gray);
+    font-size: 15px;
+    font-family:'Lexend Deca';
+    font-weight: 400;
+    top:75px;
+    padding-right:30px;
+    padding-left: 40px;
+    line-height: 25px;
+}
+.leftCard button{
+    position: relative;
+    height:30px;
+    width:130px;
+    top:125px;
+    border-radius: 25px;
+    border:none;
+    left:40px;
+    font-size:16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color:var(--Bright-orange)
+}
+
+.footer{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    position: relative;
+    top:200px;
+}
+
+@media(max-width:400px){
+  .container{
+      width:250px;
+      height:800px;
+      border-radius: 15px;
+     
+  }
+  .leftCard{
+      position: absolute;
+      width: 250px;
+      height:300px;
+      border-radius:15px 15px 0 0;
+    
+  }
+  .leftCard p{
+      font-size: 12px;
+      top:60px;
+      line-height: 20px;
+
+  }
+  .leftCard button{
+      top:75px;
+  }
+  .midCard{
+    position: absolute;
+    width: 250px;
+    height:300px;
+    top:266px;
+  
+}
+
+.midCard p{
+    font-size: 12px;
+    top:60px;
+    line-height: 20px;
+
+}
+.midCard button{
+    top:75px;
+}
+.rightCard{
+    position: absolute;
+    width: 250px;
+    height:300px;
+    top:550px;
+    border-radius: 15px 15px 0 0;
+  
+}
+.rightCard p{
+    font-size: 12px;
+    top:60px;
+    line-height: 20px;
+
+}
+.rightCard button{
+    top:75px;
+}
+
+.footer{
+    display:none;
+}
+}
